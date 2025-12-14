@@ -29,7 +29,7 @@ layout: none
             top: 35%;
             font-size: 8rem;
             font-family: "Monaspace Xenon", "极影毁片文宋 Medium", var(--fontStack-monospace, monospace);
-            color: #000;
+            color: #121212;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
             user-select: none;
         }
@@ -39,13 +39,28 @@ layout: none
             bottom: 20px;
             right: 20px;
             font-size: 5rem;
-            color: #87CEEB;
+            color: #121212;
             cursor: pointer;
             user-select: none;
         }
 
         body.fade-out {
             opacity: 0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+            }
+
+            .welcome-text {
+                color: #fff;
+                text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+            }
+
+            .arrow {
+                color: #fff;
+            }
         }
 
         @media (max-width: 768px) {
