@@ -73,8 +73,8 @@
     $rest: str-slice($string, $start-at);
     $end-at: str-index($rest, $search-end);
 
-    @if $end-at {
-      $end-at: $end-at + $start-at -1;
+    @if $end-at and type-of($end-at) == "number" {
+      $end-at: $end-at + $start-at - 1;
       $variable: str-slice($string, $start-at + $search-start-length, $end-at - 1);
       // @debug '---var', $variable, $start-at, $end-at;
       @return (
