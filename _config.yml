@@ -146,7 +146,7 @@ comments:
       ## => Pageview
       ##############################
 pageview:
-  provider: leancloud # false (default), "leancloud", "custom"
+  provider: false # false (default), "leancloud", "custom"
 
   ## Leancloud
   leancloud:
@@ -159,7 +159,7 @@ pageview:
       ## => Search
       ##############################
 search:
-  provider: google # "default" (default), false, "google", "custom"
+  provider: default # "default" (default), false, "google", "custom"
 
   ## Google Custom Search Engine
   google:
@@ -174,7 +174,7 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id: # Google Analytics id for the site
+    tracking_id: G-4ZS0VS9DC4 # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 ## => Build
