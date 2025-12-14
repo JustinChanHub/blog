@@ -1,0 +1,103 @@
+---
+layout: none
+---
+
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }} - Welcome</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/monaspace-xenon@5.2.5/index.min.css" />
+    <link rel='stylesheet'
+        href='https://chinese-fonts-cdn.deno.dev/packages/jyhpws/dist/%E6%9E%81%E5%BD%B1%E6%AF%81%E7%89%87%E6%96%87%E5%AE%8B/result.css' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #fff;
+            font-family: 'Arial', sans-serif;
+            transition: opacity 1s ease-out;
+            overflow: hidden;
+        }
+
+        .welcome-text {
+            position: absolute;
+            left: 15%;
+            top: 35%;
+            font-size: 8rem;
+            font-family: "Monaspace Xenon", "极影毁片文宋 Medium", var(--fontStack-monospace, monospace);
+            color: #000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            user-select: none;
+        }
+
+        .arrow {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 5rem;
+            color: #87CEEB;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        body.fade-out {
+            opacity: 0;
+        }
+
+        @media (max-width: 768px) {
+            .welcome-text {
+                font-size: 2rem;
+            }
+            .arrow {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .welcome-text {
+                font-size: 2rem;
+            }
+            .arrow {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome-text" id="welcomeText">才 华 有 限</div>
+    <div class="arrow" id="arrow">>></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const body = document.body;
+            const welcomeText = document.getElementById('welcomeText');
+            const arrow = document.getElementById('arrow');
+
+            function redirectToHome() {
+                // 设置会话已访问标志
+                sessionStorage.setItem('hasWelcome', 'true');
+                // 等待动画完成后跳转
+                setTimeout(function () {
+                    window.location.href = '/';
+                }, 500); // 1秒后跳转，与CSS transition时间匹配
+            }
+
+            function handleClick() {
+                body.classList.add('fade-out');
+                redirectToHome();
+            }
+
+            // 点击页面任何地方都触发
+            body.addEventListener('click', handleClick);
+            welcomeText.addEventListener('click', handleClick);
+            arrow.addEventListener('click', handleClick);
+        });
+    </script>
+</body>
+
+</html>

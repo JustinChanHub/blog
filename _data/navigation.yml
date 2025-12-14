@@ -1,50 +1,260 @@
 header:
-  - titles:
-      # @start locale config
-      en      : &EN       Archive
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  归档
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  歸檔
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       아카이브
-      ko-KR   : *KO
-      fr      : &FR       Archives
-      fr-BE   : *FR
-      fr-CA   : *FR
-      fr-CH   : *FR
-      fr-FR   : *FR
-      fr-LU   : *FR
-      # @end locale config
-    url: /archive.html
+- titles:
+    # @start locale config
+    en: &EN Home
+    en-GB: *EN
+    en-US: *EN
+    en-CA: *EN
+    en-AU: *EN
+    zh-Hans: &ZH_HANS 首页
+    zh: *ZH_HANS
+    zh-CN: *ZH_HANS
+    zh-SG: *ZH_HANS
+    zh-Hant: &ZH_HANT 
+    zh-TW: *ZH_HANT
+    zh-HK: *ZH_HANT
+    ko: &KO 
+    ko-KR: *KO
+    fr: &FR 
+    fr-BE: *FR
+    fr-CA: *FR
+    fr-CH: *FR
+    fr-FR: *FR
+    fr-LU: *FR
+    tr: &TR # @end locale config
+  url: /
+- titles:
+    # @start locale config
+    en: &EN Navigation
+    en-GB: *EN
+    en-US: *EN
+    en-CA: *EN
+    en-AU: *EN
+    zh-Hans: &ZH_HANS 专题导航
+    zh: *ZH_HANS
+    zh-CN: *ZH_HANS
+    zh-SG: *ZH_HANS
+    zh-Hant: &ZH_HANT 
+    zh-TW: *ZH_HANT
+    zh-HK: *ZH_HANT
+    ko: &KO 
+    ko-KR: *KO
+    fr: &FR 
+    fr-BE: *FR
+    fr-CA: *FR
+    fr-CH: *FR
+    fr-FR: *FR
+    fr-LU: *FR
+    tr: &TR # @end locale config
+  url: /navigation
+  key: docs
+# - title: Samples
+#   url: /samples.html
+#   key: samples
+- titles:
+    # @start locale config
+    en: &EN Archive
+    en-GB: *EN
+    en-US: *EN
+    en-CA: *EN
+    en-AU: *EN
+    zh-Hans: &ZH_HANS 标签分类
+    zh: *ZH_HANS
+    zh-CN: *ZH_HANS
+    zh-SG: *ZH_HANS
+    zh-Hant: &ZH_HANT 歸檔
+    zh-TW: *ZH_HANT
+    zh-HK: *ZH_HANT
+    ko: &KO 아카이브
+    ko-KR: *KO
+    fr: &FR Archives
+    fr-BE: *FR
+    fr-CA: *FR
+    fr-CH: *FR
+    fr-FR: *FR
+    fr-LU: *FR
+    tr: &TR Arşivdekiler
+    # @end locale config
+  url: /archive.html
+- titles:
+    # @start locale config
+    en: &EN Donate
+    en-GB: *EN
+    en-US: *EN
+    en-CA: *EN
+    en-AU: *EN
+    zh-Hans: &ZH_HANS 支持捐赠
+    zh: *ZH_HANS
+    zh-CN: *ZH_HANS
+    zh-SG: *ZH_HANS
+    zh-Hant: &ZH_HANT 
+    zh-TW: *ZH_HANT
+    zh-HK: *ZH_HANT
+    ko: &KO 
+    ko-KR: *KO
+    fr: &FR 
+    fr-BE: *FR
+    fr-CA: *FR
+    fr-CH: *FR
+    fr-FR: *FR
+    fr-LU: *FR
+    tr: &TR # @end locale config
+  url: /donate
 
-  - titles:
-      # @start locale config
-      en      : &EN       About
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  关于
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  關於
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       소개
-      ko-KR   : *KO
-      fr      : &KO       À propos
-      fr-BE   : *FR
-      fr-CA   : *FR
-      fr-CH   : *FR
-      fr-FR   : *FR
-      fr-LU   : *FR
-      # @end locale config
-    url: /about.html
+# - titles:
+#     # @start locale config
+#     en: &EN About
+#     en-GB: *EN
+#     en-US: *EN
+#     en-CA: *EN
+#     en-AU: *EN
+#     zh-Hans: &ZH_HANS 关于
+#     zh: *ZH_HANS
+#     zh-CN: *ZH_HANS
+#     zh-SG: *ZH_HANS
+#     zh-Hant: &ZH_HANT 關於
+#     zh-TW: *ZH_HANT
+#     zh-HK: *ZH_HANT
+#     ko: &KO 소개
+#     ko-KR: *KO
+#     fr: &FR À propos
+#     fr-BE: *FR
+#     fr-CA: *FR
+#     fr-CH: *FR
+#     fr-FR: *FR
+#     fr-LU: *FR
+#     tr: &TR Hakkında
+#     # @end locale config
+#   url: /about.html
+- title: GitHub
+  url: https://github.com/JustinChanHub
+
+navigation:
+- title: 欢迎
+  children:
+  - title: Python 文档
+    url: /python/a
+  - title: Java 文档
+    url: /java/a
+  - title: AI 文档
+    url: /python/b
+
+python:
+- title:
+  children:
+  - title: < 返回导航
+    url: /navigation
+- title: Python1
+  children:
+  - title: Python1.1
+    url: /python/a
+- title: Python2
+  children:
+  - title: Python2.1
+    url: /python/b
+  - title: Python2.2
+    url: /python/a
+- title: Python1
+  children:
+  - title: Python1.1
+    url: /python/a
+- title: Python2
+  children:
+  - title: Python2.1
+    url: /python/b
+  - title: Python2.2
+    url: /python/a
+- title: Python1
+  children:
+  - title: Python1.1
+    url: /python/a
+- title: Python2
+  children:
+  - title: Python2.1
+    url: /python/b
+  - title: Python2.2
+    url: /python/a
+- title: Python1
+  children:
+  - title: Python1.1
+    url: /python/a
+- title: Python2
+  children:
+  - title: Python2.1
+    url: /python/b
+  - title: Python2.2
+    url: /python/a
+- title: Python1
+  children:
+  - title: Python1.1
+    url: /python/a
+- title: Python2
+  children:
+  - title: Python2.1
+    url: /python/b
+  - title: Python2.2
+    url: /python/a
+- title: Python1
+  children:
+  - title: Python1.1
+    url: /python/a
+- title: Python2
+  children:
+  - title: Python2.1
+    url: /python/b
+  - title: Python2.2
+    url: /python/a
+- title: Python1
+  children:
+  - title: Python1.1
+    url: /python/a
+- title: Python2
+  children:
+  - title: Python2.1
+    url: /python/b
+  - title: Python2.2
+    url: /python/a
+- title: Python1
+  children:
+  - title: Python1.1
+    url: /python/a
+- title: Python2
+  children:
+  - title: Python2.1
+    url: /python/b
+  - title: Python2.2
+    url: /python/a
+- title: Python1
+  children:
+  - title: Python1.1
+    url: /python/a
+- title: Python2
+  children:
+  - title: Python2.1
+    url: /python/b
+  - title: Python2.2
+    url: /python/a
+- title: Python1
+  children:
+  - title: Python1.1
+    url: /python/a
+- title: Python2
+  children:
+  - title: Python2.1
+    url: /python/b
+  - title: Python2.2
+    url: /python/a
+
+java:
+- title:
+  children:
+  - title: < 返回导航
+    url: /navigation
+- title: Java
+  children:
+  - title: Java1
+    url: /java/a
+  - title: Java2
+    url: /java/a
+  - title: Java3
+    url: /java/a
