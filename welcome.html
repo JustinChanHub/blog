@@ -116,13 +116,11 @@ layout: none
 
             // 初始化 sakana-widget
             const sakanaWidget = new SakanaWidget({
+                size: 180,
                 controls: false,
-                rod: true,
-                draggable: true,
                 threshold: 1,
-                // rotate: 45,
                 character: randomCharacter,
-            }).mount('#sakana-widget');
+            }).setState({ i: 0.01, d: 1 }).mount('#sakana-widget');
 
             function redirectToHome() {
                 // 设置会话已访问标志
