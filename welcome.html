@@ -110,17 +110,26 @@ layout: none
             const welcomeText = document.getElementById('welcomeText');
             const arrow = document.getElementById('arrow');
 
+            // 检查是否为移动设备
+            const isMobile = window.innerWidth <= 768;
+
+            // 根据设备设置不同参数
+            const config = {
+                size: isMobile ? 90 : 180,
+                y: isMobile ? 10 : 20
+            };
+
             // 随机选择角色，各50%概率
             const characters = ['chisato', 'takina'];
             const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
 
             // 初始化 sakana-widget
             const sakanaWidget = new SakanaWidget({
-                size: 180,
+                size: config.size,
                 controls: false,
-                threshold: 1,
+                threshold: 0.1,
                 character: randomCharacter,
-            }).setState({ i: 0.01, d: 1 }).mount('#sakana-widget');
+            }).setState({ i: 0.01, d: 1, y: config.y }).mount('#sakana-widget');
 
             function redirectToHome() {
                 // 设置会话已访问标志
