@@ -1,0 +1,34 @@
+{%- if site.sakana_widget.enable -%}
+<!-- sakana-widget 样式和脚本 -->
+<script src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.css">
+
+<style>
+/* sakana-widget 样式 */
+#sakana-widget {
+    position: fixed;
+    bottom: 0px;
+    right: 5%;
+    z-index: 1000;
+}
+</style>
+
+<!-- sakana-widget 容器 -->
+<div id="sakana-widget"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // 随机选择角色
+    const characters = ['chisato', 'takina'];
+    const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+
+    // 初始化 sakana-widget
+    const sakanaWidget = new SakanaWidget({
+        size: 180,
+        controls: false,
+        threshold: 1,
+        character: randomCharacter
+    }).setState({ i: 0.01, d: 1 }).mount('#sakana-widget');
+});
+</script>
+{%- endif -%}

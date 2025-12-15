@@ -244,6 +244,11 @@ defaults:
     show_date: true
     lightbox: true
 
+## => Sakana Widget
+##############################
+sakana_widget:
+  enable: true # 是否启用
+
 ## => Plugins
 ##############################
 plugins:
