@@ -12,6 +12,10 @@ layout: none
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/monaspace-xenon@5.2.5/index.min.css" />
     <link rel='stylesheet'
         href='https://chinese-fonts-cdn.deno.dev/packages/jyhpws/dist/%E6%9E%81%E5%BD%B1%E6%AF%81%E7%89%87%E6%96%87%E5%AE%8B/result.css' />
+
+    <!-- sakana-widget 样式和脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.css">
     <style>
         body {
             margin: 0;
@@ -67,6 +71,7 @@ layout: none
             .welcome-text {
                 font-size: 2rem;
             }
+
             .arrow {
                 font-size: 1.5rem;
             }
@@ -76,9 +81,18 @@ layout: none
             .welcome-text {
                 font-size: 2rem;
             }
+
             .arrow {
                 font-size: 1.2rem;
             }
+        }
+
+        /* sakana-widget 样式 */
+        #sakana-widget {
+            position: fixed;
+            bottom: 0px;
+            right: 5%;
+            z-index: 1000;
         }
     </style>
 </head>
@@ -87,11 +101,28 @@ layout: none
     <div class="welcome-text" id="welcomeText">才 华 有 限</div>
     <div class="arrow" id="arrow">>></div>
 
+    <!-- sakana-widget 容器 -->
+    <div id="sakana-widget"></div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const body = document.body;
             const welcomeText = document.getElementById('welcomeText');
             const arrow = document.getElementById('arrow');
+
+            // 随机选择角色，各50%概率
+            const characters = ['chisato', 'takina'];
+            const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+
+            // 初始化 sakana-widget
+            const sakanaWidget = new SakanaWidget({
+                controls: false,
+                rod: true,
+                draggable: true,
+                threshold: 1,
+                // rotate: 45,
+                character: randomCharacter,
+            }).mount('#sakana-widget');
 
             function redirectToHome() {
                 // 设置会话已访问标志
