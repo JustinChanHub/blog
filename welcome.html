@@ -91,7 +91,7 @@ layout: none
         #sakana-widget {
             position: fixed;
             bottom: 0px;
-            right: 5%;
+            right: 7%;
             z-index: 1000;
         }
     </style>
@@ -123,13 +123,19 @@ layout: none
             const characters = ['chisato', 'takina'];
             const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
 
+            // 根据角色设置y值
+            let y = config.y;
+            if (randomCharacter === 'takina') {
+                y = 0;
+            }
+
             // 初始化 sakana-widget
             const sakanaWidget = new SakanaWidget({
                 size: config.size,
                 controls: false,
                 threshold: 0.1,
                 character: randomCharacter,
-            }).setState({ i: 0.01, d: 1, y: config.y }).mount('#sakana-widget');
+            }).setState({ i: 0.01, d: 1, y: y }).mount('#sakana-widget');
 
             function redirectToHome() {
                 // 设置会话已访问标志
