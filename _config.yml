@@ -176,6 +176,11 @@ analytics:
     tracking_id: G-4ZS0VS9DC4 # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
+## => Sakana Widget
+##############################
+sakana_widget:
+  enable: true # 是否启用
+
 ## => Build
 ##############################
 markdown: kramdown
@@ -206,48 +211,85 @@ defaults:
     type: posts
   values:
     layout: article
-    sharing: true
     license: true
     aside:
       toc: true
-    show_edit_on_github: true
+    show_edit_on_github: false
+    show_date: true
+    sharing: true
     show_subscribe: true
-    pageview: true
+    pageview: false
+    lightbox: true
+    lang: zh
+- scope:
+    path: "_posts/support"
+    type: posts
+  values:
+    layout: article
+    license: false
+    aside:
+      toc: false
+    show_edit_on_github: false
+    show_date: false
+    sharing: false
+    show_subscribe: false
+    pageview: false
+    lightbox: true
+    lang: zh
 - scope:
     path: "_posts/python"
     type: posts
   values:
-    layout: article
-    nav_key: docs
+    nav_key: topic
     sidebar:
       nav: python
+    layout: article
     license: true
     aside:
       toc: true
-    lang: zh
     show_edit_on_github: false
     show_date: true
+    sharing: true
+    show_subscribe: true
+    pageview: false
     lightbox: true
+    lang: zh
+- scope:
+    path: "_posts/go"
+    type: posts
+  values:
+    nav_key: topic
+    sidebar:
+      nav: go
+    layout: article
+    license: true
+    aside:
+      toc: true
+    show_edit_on_github: false
+    show_date: true
+    sharing: true
+    show_subscribe: true
+    pageview: false
+    lightbox: true
+    lang: zh
 - scope:
     path: "_posts/java"
     type: posts
   values:
-    layout: article
-    nav_key: docs
+    nav_key: topic
     sidebar:
       nav: java
+    layout: article
     license: true
     aside:
       toc: true
-    lang: zh
     show_edit_on_github: false
     show_date: true
+    sharing: true
+    show_subscribe: true
+    pageview: false
     lightbox: true
-
-## => Sakana Widget
-##############################
-sakana_widget:
-  enable: true # 是否启用
+    lang: zh
 
 ## => Plugins
 ##############################
