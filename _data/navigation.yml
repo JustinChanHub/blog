@@ -76,6 +76,7 @@ header:
     tr: &TR Arşivdekiler
     # @end locale config
   url: /archive.html
+  key: doc
 - titles:
     # @start locale config
     en: &EN Donate
@@ -100,6 +101,7 @@ header:
     fr-LU: *FR
     tr: &TR # @end locale config
   url: /donate
+  key: donate
 
 # - titles:
 #     # @start locale config
