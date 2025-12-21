@@ -136,10 +136,10 @@ navigation:
   children:
   - title: Go 专题
     url: /go/a
-  - title: Python 专题
-    url: /python/a
-  - title: Java 专题
-    url: /java/b
+  # - title: Python 专题
+  #   url: /python/a
+  # - title: Java 专题
+  #   url: /java/b
 
 go:
 - title:
@@ -155,30 +155,30 @@ go:
   - title: Go2.1
     url: /go/b
 
-python:
-- title:
-  children:
-  - title: < 返回导航
-    url: /navigation
-- title: Python1
-  children:
-  - title: Python1.1
-    url: /python/a
-- title: Python2
-  children:
-  - title: Python2.1
-    url: /python/b
+# python:
+# - title:
+#   children:
+#   - title: < 返回导航
+#     url: /navigation
+# - title: Python1
+#   children:
+#   - title: Python1.1
+#     url: /python/a
+# - title: Python2
+#   children:
+#   - title: Python2.1
+#     url: /python/b
 
-java:
-- title:
-  children:
-  - title: < 返回导航
-    url: /navigation
-- title: Java1
-  children:
-  - title: Java1.1
-    url: /java/a
-- title: Java2
-  children:
-  - title: Java2.1
-    url: /java/b
+# java:
+# - title:
+#   children:
+#   - title: < 返回导航
+#     url: /navigation
+# - title: Java1
+#   children:
+#   - title: Java1.1
+#     url: /java/a
+# - title: Java2
+#   children:
+#   - title: Java2.1
+#     url: /java/b
