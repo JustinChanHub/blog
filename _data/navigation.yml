@@ -150,6 +150,10 @@ go:
   children:
   - title: Go语言开发环境安装
     url: /go/installation
+  - title: go-zero 使用 goctl 自动生成代码基础指南
+    url: /go/goctl-code-generation
+  - title: 使用goctl生成模型代码
+    url: /go/goctl-model-generation
 - title: 开发
   children:
   - title: Go2.1
