@@ -146,11 +146,11 @@ go:
   children:
   - title: < 返回导航
     url: /navigation
-- title: Go1
+- title: 准备
   children:
-  - title: Go1.1
-    url: /go/a
-- title: Go2
+  - title: Go语言开发环境安装
+    url: /go/installation
+- title: 开发
   children:
   - title: Go2.1
     url: /go/b

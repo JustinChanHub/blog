@@ -1,10 +1,10 @@
 ---
-title: Go语言开发环境安装指南
+title: Go语言开发环境安装
 tags: go
 permalink: /go/installation
 ---
 
-# Go语言开发环境安装指南
+# Go语言开发环境安装
 
 Go语言（又称Golang）是由Google开发的一种静态强类型、编译型、并发型编程语言。本文将详细介绍如何在不同操作系统上安装和配置Go开发环境。
 
