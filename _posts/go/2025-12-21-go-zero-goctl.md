@@ -1,6 +1,6 @@
 ---
 title: go-zero 使用 goctl 自动生成代码基础指南
-tags: go-zero, goctl, 微服务, 代码生成
+tags: go-zero goct 微服务 代码生成
 ---
 
 在微服务架构中，go-zero 是一个强大的 Go 语言微服务框架，而 goctl 是其配套的代码生成工具。今天我来分享一下如何使用 goctl 来自动生成代码的基础知识。
