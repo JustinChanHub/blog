@@ -135,7 +135,7 @@ navigation:
 - title: 欢迎
   children:
   - title: Go 专题
-    url: /go/a
+    url: /go/installation
   # - title: Python 专题
   #   url: /python/a
   # - title: Java 专题
