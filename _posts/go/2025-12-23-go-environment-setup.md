@@ -90,28 +90,31 @@ cd go-test
 go mod init test
 ```
 
-3. 创建一个简单的Go程序`main.go`：
-```go
-package main
+3. 创建一个简单的Go程序 `main.go` ：
 
-import "fmt"
+   ```go
+   package main
 
-func main() {
-    fmt.Println("Hello, Go!")
-}
-```
+   import "fmt"
+
+   func main() {
+       fmt.Println("Hello, Go!")
+   }
+   ```
 
 4. 运行程序：
-```bash
-go run main.go
-```
 
-如果输出"Hello, Go!"，说明Go环境配置成功。
+   ```bash
+   go run main.go
+   ```
+
+   如果输出"Hello, Go!"，说明Go环境配置成功。
 
 5. 清理测试文件：
-```bash
-cd ..
-rm -rf go-test
-```
+
+   ```bash
+   cd ..
+   rm -rf go-test
+   ```
 
 通过以上步骤，你的Go开发环境就配置完成了。现在你可以开始开发Go服务项目了。
