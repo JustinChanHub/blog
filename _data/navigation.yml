@@ -135,7 +135,7 @@ navigation:
 - title: 欢迎
   children:
   - title: Go 专题
-    url: /go/installation
+    url: /go/go-environment-setup
   # - title: Python 专题
   #   url: /python/a
   # - title: Java 专题
@@ -146,18 +146,10 @@ go:
   children:
   - title: < 返回导航
     url: /navigation
-- title: 准备
+- title: 基础准备
   children:
-  - title: Go语言开发环境安装
-    url: /go/installation
-  - title: go-zero 使用 goctl 自动生成代码基础指南
-    url: /go/goctl-code-generation
-  - title: 使用goctl生成模型代码
-    url: /go/goctl-model-generation
-- title: 开发
-  children:
-  - title: Go2.1
-    url: /go/b
+  - title: Go 基础环境配置指南
+    url: /go/go-environment-setup
 
 # python:
 # - title:
