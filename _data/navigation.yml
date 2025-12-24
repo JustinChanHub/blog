@@ -146,10 +146,14 @@ go:
   children:
   - title: < 返回导航
     url: /navigation
-- title: 基础准备
+- title: Go 基础
   children:
-  - title: Go 基础环境配置指南
+  - title: Go基础环境配置指南
     url: /go/go-environment-setup
+- title: goctl 微服务开发
+  children:
+  - title: goctl基础环境搭建指南
+    url: /go/goctl-environment-setup
 
 # python:
 # - title:

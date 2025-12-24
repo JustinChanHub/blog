@@ -1,5 +1,5 @@
 ---
-title: Go 基础环境配置指南
+title: Go基础环境配置指南
 tags: go environment setup
 permalink: /go/go-environment-setup
 ---
