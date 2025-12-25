@@ -241,9 +241,9 @@ defaults:
     path: "_posts/python"
     type: posts
   values:
-    nav_key: topic
     sidebar:
       nav: python
+    nav_key: topic
     layout: article
     license: true
     aside:
@@ -259,9 +259,9 @@ defaults:
     path: "_posts/go"
     type: posts
   values:
-    nav_key: topic
     sidebar:
       nav: go
+    nav_key: topic
     layout: article
     license: true
     aside:
@@ -277,9 +277,27 @@ defaults:
     path: "_posts/java"
     type: posts
   values:
-    nav_key: topic
     sidebar:
       nav: java
+    nav_key: topic
+    layout: article
+    license: true
+    aside:
+      toc: true
+    show_edit_on_github: false
+    show_date: true
+    sharing: true
+    show_subscribe: true
+    pageview: false
+    lightbox: true
+    lang: zh
+- scope:
+    path: "_posts/self"
+    type: posts
+  values:
+    sidebar:
+      nav: navigation
+    nav_key: topic
     layout: article
     license: true
     aside:

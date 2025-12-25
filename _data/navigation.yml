@@ -136,6 +136,10 @@ navigation:
   children:
   - title: Go 专题
     url: /go/go-environment-setup
+- title: 胡思乱想
+  children:
+  - title: 关于成年男性脱发的思考
+    url: /self/hair
   # - title: Python 专题
   #   url: /python/a
   # - title: Java 专题
